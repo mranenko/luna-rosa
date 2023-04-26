@@ -1,0 +1,32 @@
+button,
+.button {
+  align-items: center;
+  background: color(primary);
+  border: 0;
+  border-radius: 4rem;
+  color: color(white);
+  cursor: pointer;
+  display: inline-grid;
+  font: inherit;
+  font-weight: bold;
+  height: 4rem;
+  grid-auto-flow: column;
+  padding: 1rem 3rem;
+
+  &.outline {
+    background: none;
+    border: 1px solid color(primary);
+    color: color(primary);
+  }
+
+  &.accent {
+    background: color(accent);
+    color: color(white);
+  }
+
+  &.accent.outline {
+    background: none;
+    border: 1px solid color(accent);
+    color: color(accent);
+  }
+}

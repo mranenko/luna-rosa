@@ -1,0 +1,45 @@
+/*
+  display
+*/
+
+.layout.system header {
+  background: color(white);
+  border-bottom: 1px solid color(neutral);
+  padding: 2rem;
+}
+
+.layout.system main {
+  background: color(neutral, 1);
+  padding: 2rem;
+}
+
+.layout.system nav {
+  background: color(neutral, 2);
+  padding: 2rem;
+}
+
+.layout.system nav a {
+  display: block;
+  margin: 0 -2rem .25rem;
+  padding: .25rem 2rem;
+}
+
+.layout.system nav a:hover { background: color(neutral, 3); }
+.layout.system nav a.active { font-weight: bold; }
+
+/*
+  grid
+*/
+
+.layout.system {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav main';
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.layout.system header { grid-area: header; }
+.layout.system nav { grid-area: nav; }
+.layout.system main { grid-area: main; }

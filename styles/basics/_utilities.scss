@@ -1,0 +1,61 @@
+/*
+  display
+*/
+
+.block { display: block; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+
+
+/*
+  grid
+*/
+
+.grid {
+  display: grid;
+
+  &.gap-5 { gap: .5rem; }
+  &.gap-75 { gap: .75rem; }
+  &.gap-1 { gap: 1rem; }
+  &.gap-15 { gap: 1.5rem; }
+
+  &.grid-flow-col { grid-auto-flow: column; }
+  &.grid-flow-row { grid-auto-flow: row; }
+  
+  &.justify-end { justify-content: end; }
+  &.justify-start { justify-content: start; }
+}
+
+
+/*
+  margins + padding
+*/
+
+.mb-05 { margin-bottom: .5rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-15 { margin-bottom: 1.5rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+.mt-05 { margin-top: .5rem; }
+.mt-1 { margin-top: 1rem; }
+.mt-15 { margin-top: 1.5rem; }
+.mt-2 { margin-top: 2rem; }
+
+.my-15 { margin-bottom: 1.5rem; margin-top: 1.5rem; }
+
+.p-1 { padding: 1rem; }
+
+
+/*
+  small
+*/
+
+.small { font-size: font(small, size); }
+
+
+/*
+  white-space
+*/
+
+.ws-normal { white-space: normal; }
+.ws-pre-line { white-space: pre-line; }

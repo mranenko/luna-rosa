@@ -1,0 +1,148 @@
+/*
+  color helper functions + mixins
+*/
+
+@function contrast($color) {
+  @if (lightness($color) > 40) {
+    @return color(white);
+  }
+  @return color(black);
+}
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+
+/*
+  named colors
+*/
+
+$color-gris: #dfdad9;
+$color-lila: #605169;
+$color-rosa: #ca7573;
+
+
+/*
+  color by name
+*/
+
+$colors: (
+  accent: $color-rosa,
+  black: shade($color-lila, 40%),
+  primary: $color-lila,
+  white: tint($color-lila, 99%),
+
+  neutral: (
+    1: tint($color-gris, 69%),
+    2: tint($color-gris, 30%),
+    3: $color-gris,
+  ),
+);
+
+
+/*
+  color accessor function
+*/
+
+@function color($keys...) {
+  $value: $colors;
+
+  @if length($keys) == 1 {
+    @if nth($keys, 1) == neutral { @return color(neutral, 3); }
+  }
+
+  @each $key in $keys {
+    $value: map-get($value, $key);
+  }
+
+  @return $value;
+}
+
+
+/*
+  color swatches
+*/
+
+@mixin swatch($background, $background-value: $background) {
+  background: $background-value;
+  position: relative;
+
+  &,
+  &::after { 
+    @include size(6rem);
+    align-items: center;
+    border-radius: 50%;
+    display: inline-grid;
+    justify-content: center;
+  }
+
+  &::after {
+    content: '#{$background} #{$background-value}';
+    font-size: .75rem;
+    left: 50%;
+    min-width: 4rem;
+    position: absolute;
+    transform: translateX(-2rem);
+    text-align: center;
+    // add break after every word
+    overflow: visible;
+    width: 0;
+  }
+}
+
+
+/*
+  initial color swatches
+*/
+
+$swatches-initial: (
+  accent: color(accent),
+  primary: color(primary),
+  black: color(black),
+  neutral: color(neutral),
+  white: color(white),
+);
+
+@each $name, $color in $swatches-initial {
+  .swatch.#{'' + $name} {
+    @include swatch($name, $color);
+  }
+}
+
+.swatch.accent,
+.swatch.black,
+.swatch.primary {
+  color: color(white);
+}
+
+.swatch.white {
+  border: 1px solid color(neutral);
+}
+
+
+/*
+  neutral color swatches
+*/
+
+$swatches-neutral: (
+  1: color(neutral, 1),
+  2: color(neutral, 2),
+  3: color(neutral, 3),
+  4: color(neutral, 4),
+);
+
+@each $name, $color in $swatches-neutral {
+  .swatch.#{'neutral-' + $name} {
+    @include swatch(#{'neutral-' + $name}, $color);
+  }
+}
+
+.swatch.neutral-1,
+.swatch.neutral-2 {
+  border: 1px solid color(neutral);
+}

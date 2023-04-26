@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&&display=swap');
+
+
+/*
+  fonts by group
+*/
+
+$fonts: (
+  monospace: (
+    family: #{'Anonymous Pro', monospace},
+    size: .875rem,
+  ),
+  
+  small: (
+    size: .875rem,
+  ),
+
+  text: (
+    family: #{'Lato', sans-serif},
+    line-height: 1.5,
+    size: 1rem,
+    weight: 400,
+  ),
+
+  title: (
+    family: #{'Lato', sans-serif},
+    line-height: 1.25,
+    size: (
+      1: 4rem,
+      2: 2.5rem,
+      3: 1.5rem,
+    ),
+    weight: 700,
+  ),
+);
+
+
+/*
+  font accessor function
+*/
+
+@function font($keys...) {
+  $value: $fonts;
+
+  @each $key in $keys {
+    $value: map-get($value, $key);
+  }
+
+  @return $value;
+}

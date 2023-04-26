@@ -1,0 +1,553 @@
+/*
+  color helper functions + mixins
+*/
+/*
+  named colors
+*/
+/*
+  color by name
+*/
+/*
+  color accessor function
+*/
+/*
+  color swatches
+*/
+/*
+  initial color swatches
+*/
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&&display=swap");
+.swatch.accent {
+  background: #ca7573;
+  position: relative;
+}
+.swatch.accent, .swatch.accent::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.accent::after {
+  content: "accent #ca7573";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.primary {
+  background: #605169;
+  position: relative;
+}
+.swatch.primary, .swatch.primary::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.primary::after {
+  content: "primary #605169";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.black {
+  background: #3a313f;
+  position: relative;
+}
+.swatch.black, .swatch.black::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.black::after {
+  content: "black #3a313f";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral {
+  background: #dfdad9;
+  position: relative;
+}
+.swatch.neutral, .swatch.neutral::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral::after {
+  content: "neutral #dfdad9";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.white {
+  background: #fdfdfe;
+  position: relative;
+}
+.swatch.white, .swatch.white::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.white::after {
+  content: "white #fdfdfe";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.accent,
+.swatch.black,
+.swatch.primary {
+  color: #fdfdfe;
+}
+
+.swatch.white {
+  border: 1px solid #dfdad9;
+}
+
+/*
+  neutral color swatches
+*/
+.swatch.neutral-1 {
+  background: #f5f4f3;
+  position: relative;
+}
+.swatch.neutral-1, .swatch.neutral-1::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-1::after {
+  content: "neutral-1 #f5f4f3";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral-2 {
+  background: #e9e5e4;
+  position: relative;
+}
+.swatch.neutral-2, .swatch.neutral-2::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-2::after {
+  content: "neutral-2 #e9e5e4";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral-3 {
+  background: #dfdad9;
+  position: relative;
+}
+.swatch.neutral-3, .swatch.neutral-3::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-3::after {
+  content: "neutral-3 #dfdad9";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral-4 {
+  position: relative;
+}
+.swatch.neutral-4, .swatch.neutral-4::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-4::after {
+  content: "neutral-4 ";
+  font-size: 0.75rem;
+  left: 50%;
+  min-width: 4rem;
+  position: absolute;
+  transform: translateX(-2rem);
+  text-align: center;
+  overflow: visible;
+  width: 0;
+}
+
+.swatch.neutral-1,
+.swatch.neutral-2 {
+  border: 1px solid #dfdad9;
+}
+
+/*
+  fonts by group
+*/
+/*
+  font accessor function
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: normal 16px sans-serif;
+}
+
+body {
+  background: #f5f4f3;
+  color: #3a313f;
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+code,
+pre {
+  font-family: Anonymous Pro, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  white-space: pre-line;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+h1, h2, h3 {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.title,
+.subtitle,
+.subsubtitle {
+  color: #605169;
+  text-transform: lowercase;
+}
+.title:after,
+.subtitle:after,
+.subsubtitle:after {
+  color: #ca7573;
+  content: ".";
+  display: inline-block;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #dfdad9;
+  margin: 2.5rem 0;
+}
+
+ol,
+ul {
+  margin: 0 0 1rem 1.5rem;
+}
+
+ol li,
+ul li {
+  margin: 0 0 0.5rem;
+}
+
+/*
+  display
+*/
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/*
+  grid
+*/
+.grid {
+  display: grid;
+}
+.grid.gap-5 {
+  gap: 0.5rem;
+}
+.grid.gap-75 {
+  gap: 0.75rem;
+}
+.grid.gap-1 {
+  gap: 1rem;
+}
+.grid.gap-15 {
+  gap: 1.5rem;
+}
+.grid.grid-flow-col {
+  grid-auto-flow: column;
+}
+.grid.grid-flow-row {
+  grid-auto-flow: row;
+}
+.grid.justify-end {
+  justify-content: end;
+}
+.grid.justify-start {
+  justify-content: start;
+}
+
+/*
+  margins + padding
+*/
+.mb-05 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-15 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-05 {
+  margin-top: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-15 {
+  margin-top: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.my-15 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+/*
+  small
+*/
+.small {
+  font-size: 0.875rem;
+}
+
+/*
+  white-space
+*/
+.ws-normal {
+  white-space: normal;
+}
+
+.ws-pre-line {
+  white-space: pre-line;
+}
+
+button,
+.button {
+  align-items: center;
+  background: #605169;
+  border: 0;
+  border-radius: 4rem;
+  color: #fdfdfe;
+  cursor: pointer;
+  display: inline-grid;
+  font: inherit;
+  font-weight: bold;
+  height: 4rem;
+  grid-auto-flow: column;
+  padding: 1rem 3rem;
+}
+button.outline,
+.button.outline {
+  background: none;
+  border: 1px solid #605169;
+  color: #605169;
+}
+button.accent,
+.button.accent {
+  background: #ca7573;
+  color: #fdfdfe;
+}
+button.accent.outline,
+.button.accent.outline {
+  background: none;
+  border: 1px solid #ca7573;
+  color: #ca7573;
+}
+
+.input {
+  background: rgba(96, 81, 105, 0.8);
+  border-radius: 2rem;
+  border: 0;
+  color: #fdfdfe;
+  font: inherit;
+  height: 4rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+/*
+  display
+*/
+.layout.system header {
+  background: #fdfdfe;
+  border-bottom: 1px solid #dfdad9;
+  padding: 2rem;
+}
+
+.layout.system main {
+  background: #f5f4f3;
+  padding: 2rem;
+}
+
+.layout.system nav {
+  background: #e9e5e4;
+  padding: 2rem;
+}
+
+.layout.system nav a {
+  display: block;
+  margin: 0 -2rem 0.25rem;
+  padding: 0.25rem 2rem;
+}
+
+.layout.system nav a:hover {
+  background: #dfdad9;
+}
+
+.layout.system nav a.active {
+  font-weight: bold;
+}
+
+/*
+  grid
+*/
+.layout.system {
+  display: grid;
+  grid-template-areas: "header header" "nav main";
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.layout.system header {
+  grid-area: header;
+}
+
+.layout.system nav {
+  grid-area: nav;
+}
+
+.layout.system main {
+  grid-area: main;
+}
+
+/*# sourceMappingURL=index.css.map */

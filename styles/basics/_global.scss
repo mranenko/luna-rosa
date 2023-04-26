@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: normal 16px sans-serif;
+}
+
+body {
+  background: color(neutral, 1);
+  color: color(black);
+  font-family: font(text, family);
+  font-size: font(text, size);
+  font-weight: font(text, weight);
+  line-height: font(text, line-height);
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+code,
+pre {
+  font-family: font(monospace, family);
+  font-size: font(monospace, size);
+  line-height: #{calc(font(text, size) * font(text, line-height))};
+  white-space: pre-line;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+h1, h2, h3 {
+  font-family: font(title, family);
+  font-weight: font(title, weight);
+  line-height: font(title, line-height);
+  margin: 0 0 1rem;
+}
+
+h1 { font-size: font(title, size, 1); }
+h2 { font-size: font(title, size, 2); }
+h3 { font-size: font(title, size, 3); }
+
+.title,
+.subtitle,
+.subsubtitle {
+  color: color(primary);
+  text-transform: lowercase;
+  
+  &:after {
+    color: color(accent);
+    content: '.';
+    display: inline-block;
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid color(neutral);
+  margin: 2.5rem 0;
+}
+
+ol,
+ul {
+  margin: 0 0 1rem 1.5rem;
+}
+
+ol li,
+ul li {
+  margin: 0 0 .5rem;
+}
