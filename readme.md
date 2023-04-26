@@ -1,8 +1,6 @@
-# Boilerplate SCSS
+# luna rosa
 
-luna rosa simple ui kit.
-
-- [ui kit](ui/index.html)
+luna rosa starter ui kit.
 
 
 ## Initial install
@@ -20,4 +18,4 @@ note: this project was created with node 18.16.0 / npm 9.5.1.
 npm start
 ```
 
-this will open at `localhost:20234/ui/index.html`
+this will open `localhost:20234/ui/index.html`
