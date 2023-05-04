@@ -223,29 +223,6 @@
   width: 0;
 }
 
-.swatch.neutral-4 {
-  position: relative;
-}
-.swatch.neutral-4, .swatch.neutral-4::after {
-  height: 6rem;
-  width: 6rem;
-  align-items: center;
-  border-radius: 50%;
-  display: inline-grid;
-  justify-content: center;
-}
-.swatch.neutral-4::after {
-  content: "neutral-4 ";
-  font-size: 0.75rem;
-  left: 50%;
-  min-width: 4rem;
-  position: absolute;
-  transform: translateX(-2rem);
-  text-align: center;
-  overflow: visible;
-  width: 0;
-}
-
 .swatch.neutral-1,
 .swatch.neutral-2 {
   border: 1px solid #dfdad9;
