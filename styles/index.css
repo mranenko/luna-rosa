@@ -468,8 +468,27 @@ button.accent.outline,
   color: #fdfdfe;
   font: inherit;
   height: 4rem;
-  padding: 1rem;
+  padding: 1.25rem 2rem;
   width: 100%;
+}
+
+.input-group {
+  margin: 0 0 1rem;
+  position: relative;
+}
+
+.label {
+  color: rgba(253, 253, 254, 0.5);
+  font-size: 0.875rem;
+  left: 2rem;
+  position: absolute;
+  text-transform: lowercase;
+  top: 0.25rem;
+}
+
+.label + .input {
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
 }
 
 /*
@@ -502,7 +521,9 @@ button.accent.outline,
 }
 
 .layout.system nav a.active {
+  border-left: 0.375rem solid #605169;
   font-weight: bold;
+  padding-left: 1.625rem;
 }
 
 /*

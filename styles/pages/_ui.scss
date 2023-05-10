@@ -25,7 +25,12 @@
 }
 
 .layout.system nav a:hover { background: color(neutral, 3); }
-.layout.system nav a.active { font-weight: bold; }
+
+.layout.system nav a.active {
+  border-left: .375rem solid color(primary);
+  font-weight: bold;
+  padding-left: 1.625rem;
+}
 
 /*
   grid

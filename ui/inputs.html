@@ -28,7 +28,23 @@
 
     <main>
       <h2 class="title">inputs</h2>
-      <input class="input" type="text">
+      <div class="input-group">
+        <input class="input name" id="name" type="text" value="Text Input">
+      </div>
+
+      <h3 class="subtitle mt-2">inputs with labels</h3>
+      <div class="input-group">
+        <label for="name" class="label">Name</label>
+        <input class="input name" id="name" type="text" value="Your Name">
+      </div>
+      <div class="input-group">
+        <label for="name" class="label">Email</label>
+      <input class="input email" id="email"  type="text" value="user@mail.com">
+      </div>
+      <div class="input-group">
+        <label for="name" class="label">Password</label>
+      <input class="input password" id="password"  type="password" value="1234567890">
+      </div>
     </main>
   </body>
 </html>

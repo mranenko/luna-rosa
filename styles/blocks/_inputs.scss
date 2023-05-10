@@ -5,6 +5,25 @@
   color: color(white);
   font: inherit;
   height: 4rem;
-  padding: 1rem;
+  padding: 1.25rem 2rem;
   width: 100%;
+}
+
+.input-group {
+  margin: 0 0 1rem;
+  position: relative;
+}
+
+.label {
+  color: rgba(color(white), .5);
+  font-size: .875rem;
+  left: 2rem;
+  position: absolute;
+  text-transform: lowercase;
+  top: .25rem;
+}
+
+.label + .input {
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
 }
