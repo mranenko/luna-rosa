@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.label {
+.input-group .label {
   color: rgba(color(white), .5);
   font-size: .875rem;
   left: 2rem;
@@ -23,7 +23,7 @@
   top: .25rem;
 }
 
-.label + .input {
-  padding-bottom: 1rem;
-  padding-top: 1.5rem;
+.input-group .label + .input {
+  padding-bottom: .75rem;
+  padding-top: 1.75rem;
 }
