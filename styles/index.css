@@ -472,6 +472,28 @@ button.accent.outline,
   width: 100%;
 }
 
+.input.email,
+.input.name,
+.input.password {
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+}
+
+.input.email {
+  background-image: url("../../images/icons/envelope.svg");
+}
+
+.input.name {
+  background-image: url("../../images/icons/user-rectangle.svg");
+}
+
+.input.password {
+  background-image: url("../../images/icons/lock-key.svg");
+}
+
+/*
+  input group
+*/
 .input-group {
   margin: 0 0 1rem;
   position: relative;

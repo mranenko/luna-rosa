@@ -35,7 +35,7 @@ this will open `localhost:20234/ui/index.html`
 - **dribbble:** [dribbble.com/shots/20990608-luna-rosa-sign-in-sign-up-ui-kit](https://dribbble.com/shots/20990608-luna-rosa-sign-in-sign-up-ui-kit)
 - **figma:** [figma.com/file/5cIal4BZwhG7p3AN7I9qpJ/luna-rosa?node-id=1%3A3&t=xX78DjbhvlEI0r2j-1](https://www.figma.com/file/5cIal4BZwhG7p3AN7I9qpJ/luna-rosa?node-id=1%3A3&t=xX78DjbhvlEI0r2j-1)
 
-### code for sign in + sign up pages (html + css + tailwind).
+### code for sign in + sign up pages on codepen (html + css + tailwind).
 
-- **codepen:** [codepen.io/mranenko/full/VwEMKBE](https://codepen.io/mranenko/full/VwEMKBE)
-- **codepen:** [codepen.io/mranenko/full/VwEMPQp](https://codepen.io/mranenko/full/VwEMPQp)
+- **sign in page:** [codepen.io/mranenko/full/VwEMKBE](https://codepen.io/mranenko/full/VwEMKBE)
+- **sign up page:** [codepen.io/mranenko/full/VwEMPQp](https://codepen.io/mranenko/full/VwEMPQp)
